@@ -1,0 +1,46 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Generic layout styles */
+
+header {
+    height: 0px;
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1;
+    height: calc(100vh - 0px - 50px);
+    display: flex;
+    overflow-y: scroll;
+}
+
+footer {
+    height: 50px;
+    flex-shrink: 0;
+}
+
+section {
+    flex: 10 10 0;
+    padding: 10px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+aside {
+    background-color: rgb(230, 235, 223);
+    flex: 3 3 0;
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+@media (max-width: 1024px) {
+    aside {
+        display: none;
+    }
+}
