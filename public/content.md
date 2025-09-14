@@ -23,12 +23,14 @@
 - Product state $\ket\psi = \ket{\phi_1} \otimes \ket{\phi_2}$
 - Entangled state $\nexists \phi_1, \phi_2: \ket\psi = \ket{\phi_1} \otimes \ket{\phi_2}$
 - Projector $A \in L(V)$ s.t. $A^2 = A$
-- Kr&ouml;necker $\delta_{ij} =
+- Kr&ouml;necker $
+\delta_{ij} =
 \begin{cases}
-1 & \text{if } i = j \\
-0 & \text{if } i \neq j
+1 & \text{if } i = j \\\\
+0 & \text{if } i \ne j
 \end{cases}
 $
+
 - Commutator $[A, B]$, commutes $=0$
 - Anticommutator $[A, B]_+$, anticommutes $=0$
 
