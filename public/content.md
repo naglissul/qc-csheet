@@ -294,4 +294,12 @@ $$
 = \frac{1}{\sqrt2}\ket{+-} + \frac{1}{\sqrt2}\ket{-+} = \frac{1}{\sqrt2}(\frac{1}{\sqrt2}\ket{00}+\frac{1}{\sqrt2}\ket{10}-\frac{1}{\sqrt2}\ket{01}-\frac{1}{\sqrt2}\ket{11}) + \frac{1}{\sqrt2}(\frac{1}{\sqrt2}\ket{00}-\frac{1}{\sqrt2}\ket{10}+\frac{1}{\sqrt2}\ket{01}-\frac{1}{\sqrt2}\ket{11}) \text{  on XX basis}
 $$
 
-# Trying to set the thesis scope
+---
+
+Sources:
+
+https://homepages.cwi.nl/~rdewolf/qcnotes.pdf
+
+https://almuhammadi.com/sultan/books_2020/Nielsen_Chuang.pdf
+
+https://www.youtube.com/@quantum-soar
