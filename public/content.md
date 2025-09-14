@@ -34,6 +34,36 @@ $
 - Commutator $[A, B]$, commutes $=0$
 - Anticommutator $[A, B]_+$, anticommutes $=0$
 
+## Superdense coding
+
+
+
+
+## Quantum Computing (2025 UvA)
+
+**Unitary preserves inner product** (kvantinekompiuterija.lt - no-cloning theorem proof):
+
+$U\ket\psi = \ket\tau$ and $U\ket\phi = \ket\kappa$
+$\langle\psi|\phi\rangle = \langle\tau|\kappa\rangle$
+
+**Superdense coding**
+
+Chuang and Nielsen the same. Quantum Soar (YT) switches 01 with 10 and then does decoding with "upside down" circuit - Hadamard on the first qubit, CNOT with first qubit control, second qubit target.
+
+$\ket{\Phi^+} = \text{CNOT}_{2 \rightarrow 1} \, ( I \otimes H ) \ket{0} \otimes \ket{0} = \text{CNOT}_{1 \rightarrow 2} \, ( H \otimes I ) \ket{0} \otimes \ket{0} = \frac{1}{\sqrt{2}} ( \ket{00} + \ket{11} )$, encodes 00
+
+$\ket{\Phi^-} = \hspace{2cm} (Z \otimes I) \ket{\Phi^+} = \frac{1}{\sqrt{2}} ( \ket{00} - \ket{11} )$, encodes 01
+
+$\ket{\Psi^+} = \hspace{1.9cm} (X \otimes I) \ket{\Phi^+} = \frac{1}{\sqrt{2}} ( \ket{01} + \ket{10} )$, encodes 10
+
+$\ket{\Psi^-} = \hspace{1.8cm} (iY \otimes I)\ket{\Phi^+} = \frac{1}{\sqrt{2}} ( \ket{01} - \ket{10} )$, encodes 11
+
+($iY = ZX$)
+
+Decoding: 
+
+$(I \otimes H) \text{CNOT}_{2 \rightarrow 1}\ket{\psi_{encoded}}$
+
 ## Quantum Soar (YT) +Nielsen and Chuang
 
 2024-09-10
@@ -59,13 +89,6 @@ $\psi$ is in superposition
 
 ### Superdense coding
 
-$\ket{\Phi^+} = \text{CNOT} \, ( H \otimes I ) \ket{0} \otimes \ket{0} = \frac{1}{\sqrt{2}} ( \ket{00} + \ket{11} )$, encodes 00
-
-$\ket{\Phi^-} = \hspace{2cm} (Z \otimes I) \ket{\Phi^+} = \frac{1}{\sqrt{2}} ( \ket{00} - \ket{11} )$, encodes 01
-
-$\ket{\Psi^+} = \hspace{1.9cm} (X \otimes I) \ket{\Phi^+} = \frac{1}{\sqrt{2}} ( \ket{01} + \ket{10} )$, encodes 10
-
-$\ket{\Psi^-} = \hspace{1.8cm} (iY \otimes I)\ket{\Phi^+} = \frac{1}{\sqrt{2}} ( \ket{01} - \ket{10} )$, encodes 11
         
 ### Oracles
         
@@ -113,6 +136,12 @@ $X|1\rangle = |0\rangle$
 $Y|0\rangle = e^{\frac \pi 2 i}|1\rangle = i|1\rangle$
 
 $Y|1\rangle = e^{-\frac \pi 2 i}|0\rangle = -i|0\rangle$
+
+## H
+
+$H\ket0 = \ket+$, $H\ket1 = \ket-$,
+
+$H\ket+ = 0$, $H\ket- = \ket1$
 
 ## Phase
 
