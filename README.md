@@ -7,3 +7,5 @@ Basic website, hosted with firebase. Feedback, suggestions - naglis.suliokas@gma
 ## dev
 
 python3 -m http.server 3000
+
+http://localhost:3000/public/index.html

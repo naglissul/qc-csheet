@@ -1,8 +1,40 @@
-# Quantum Computing cheatsheet (WIP)
+# Quantum Computing cheatsheet
 
-## One
+## Quantum Catch-up course
 
-2024-09-10 by Naglis Šuliokas
+2025-09-05 from UvA course lecture notes (with additions from Naglis memory on reading articles)
+
+**Postulates**
+1. $\ket{\psi(t)} \in \mathcal H, \lVert \ket{\psi(t)} \rVert = 1$
+2. $\ket{\psi(t_1)} = U(t_0, t_1)\ket{\psi(t_0)}$
+3. $\text{Pr}[\lambda_i] = \bra\psi P_i \ket\psi$ and $\ket\psi \rightarrow \frac{P_i\ket\psi}{\sqrt{\text{Pr}[\lambda_i]}}$
+4. $\ket\psi \otimes \ket\phi \in \mathcal H \otimes \mathcal K$ 
+
+**Math, notations**
+
+- Hermitian $U^\dag = \bar U^T$, $U^*$
+- Inner product $\langle\psi|\psi\rangle = \lVert \ket\psi \rVert ^2$
+- Hermitian op $A$ s.t. $A^\dag = A$
+- Unitary op $U$ s.t. $U^\dag U = UU^\dag = I$,
+- Qubit pure state $\ket\psi \in \mathbb C^2$ s.t. $\langle\psi|\psi\rangle = 1$
+- Dirac notation of unitary, dyadic decomposition $U=\sum_i\ket{w_i}\bra{v_i}$
+- Spectral decomposition (case of dyadic) $A = \sum_i\lambda_iP_i$
+- $\braket A_\psi = \langle\psi|A|\psi\rangle = \sum_i\lambda_i\langle\psi|P_i|\psi\rangle$
+- Product state $\ket\psi = \ket{\phi_1} \otimes \ket{\phi_2}$
+- Entangled state $\nexists \phi_1, \phi_2: \ket\psi = \ket{\phi_1} \otimes \ket{\phi_2}$
+- Projector $A \in L(V)$ s.t. $A^2 = A$
+- Kr&ouml;necker $\delta_{ij} =
+\begin{cases}
+1 & \text{if } i = j \\
+0 & \text{if } i \neq j
+\end{cases}
+$
+- Commutator $[A, B]$, commutes $=0$
+- Anticommutator $[A, B]_+$, anticommutes $=0$
+
+## Quantum Soar (YT) +Nielsen and Chuang
+
+2024-09-10
     
 ### Basics: 
         
@@ -61,12 +93,6 @@ $\ket{\Psi^-} = \hspace{1.8cm} (iY \otimes I)\ket{\Phi^+} = \frac{1}{\sqrt{2}} (
 $\displaystyle H^{\otimes n} \ket{0}^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0, 1\}^n} \ket{x}$
 
 $\displaystyle H^{\otimes n} \ket{x} = \frac{1}{\sqrt{2^n}} \sum_{z \in \{0, 1\}^n} (-1)^{x \cdot z}\ket{z}$
-
-### References: 
-\begin{enumerate}
-    \item Quantum Soar on YouTube.
-    \item Nielsen, M. A., \& Chuang, I. L. (2001). Quantum computation and quantum information (Vol. 2). Cambridge: Cambridge university press.
-\end{enumerate}
 
 ## Two
 

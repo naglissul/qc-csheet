@@ -15,9 +15,8 @@ header {
 
 main {
     flex: 1;
-    height: calc(100vh - 0px - 50px);
+    min-height: calc(100vh - 0px - 50px);
     display: flex;
-    overflow-y: scroll;
 }
 
 footer {
@@ -29,7 +28,7 @@ section {
     flex: 10 10 0;
     padding: 10px;
     max-width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 aside {
